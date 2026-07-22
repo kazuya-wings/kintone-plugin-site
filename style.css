@@ -1,0 +1,254 @@
+:root {
+  --primary: #2563eb;
+  --primary-dark: #1e40af;
+  --text-dark: #1f2937;
+  --text-gray: #6b7280;
+  --bg-light: #f9fafb;
+  --white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+  color: var(--text-dark);
+  line-height: 1.7;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Header */
+.site-header {
+  background: var(--white);
+  border-bottom: 1px solid #e5e7eb;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 20px;
+  color: var(--primary);
+}
+
+nav a {
+  margin-left: 24px;
+  text-decoration: none;
+  color: var(--text-dark);
+  font-size: 15px;
+}
+
+.nav-cta {
+  background: var(--primary);
+  color: var(--white) !important;
+  padding: 8px 16px;
+  border-radius: 6px;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(135deg, #eff6ff, #dbeafe);
+  padding: 100px 0;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: var(--text-dark);
+}
+
+.hero-sub {
+  font-size: 18px;
+  color: var(--text-gray);
+  max-width: 600px;
+  margin: 0 auto 32px;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: var(--white);
+}
+
+.btn-primary:hover {
+  background: var(--primary-dark);
+}
+
+.btn-secondary {
+  background: var(--white);
+  color: var(--primary);
+  border: 1px solid var(--primary);
+}
+
+.btn-large {
+  font-size: 18px;
+  padding: 16px 36px;
+}
+
+/* Features */
+.features {
+  padding: 80px 0;
+  background: var(--white);
+}
+
+.features h2, .howto h2, .requirements h2, .screenshot h2, .download-cta h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 40px;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.feature-card {
+  background: var(--bg-light);
+  padding: 32px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.feature-icon {
+  font-size: 36px;
+  margin-bottom: 16px;
+}
+
+.feature-card h3 {
+  margin-bottom: 12px;
+  font-size: 18px;
+}
+
+.feature-card p {
+  color: var(--text-gray);
+  font-size: 14px;
+}
+
+/* Screenshot */
+.screenshot {
+  padding: 80px 0;
+  background: var(--bg-light);
+  text-align: center;
+}
+
+.screenshot-frame img {
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* How to */
+.howto {
+  padding: 80px 0;
+}
+
+.howto-list {
+  max-width: 600px;
+  margin: 0 auto;
+  padding-left: 24px;
+}
+
+.howto-list li {
+  margin-bottom: 24px;
+  font-size: 15px;
+}
+
+/* Requirements */
+.requirements {
+  padding: 80px 0;
+  background: var(--bg-light);
+}
+
+.requirements table {
+  max-width: 600px;
+  margin: 0 auto;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.requirements th, .requirements td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #e5e7eb;
+  text-align: left;
+}
+
+.requirements th {
+  width: 30%;
+  color: var(--text-gray);
+}
+
+/* Download CTA */
+.download-cta {
+  padding: 80px 0;
+  text-align: center;
+  background: var(--primary);
+  color: var(--white);
+}
+
+.download-cta h2 {
+  color: var(--white);
+}
+
+.download-cta .btn-primary {
+  background: var(--white);
+  color: var(--primary);
+}
+
+/* Footer */
+.site-footer {
+  padding: 32px 0;
+  text-align: center;
+  background: var(--text-dark);
+  color: #d1d5db;
+  font-size: 14px;
+}
+
+.site-footer a {
+  color: #d1d5db;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+  nav a {
+    margin-left: 12px;
+    font-size: 13px;
+  }
+  .hero h1 {
+    font-size: 28px;
+  }
+}
