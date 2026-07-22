@@ -169,6 +169,24 @@ nav a {
   box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
 
+/* Screenshot grid (2 images side by side) */
+.screenshot-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-top: 32px;
+}
+
+.screenshot-item {
+  text-align: center;
+}
+
+.screenshot-caption {
+  margin-top: 12px;
+  font-size: 14px;
+  color: var(--text-gray);
+}
+
 /* How to */
 .howto {
   padding: 80px 0;
@@ -239,19 +257,6 @@ nav a {
   color: #d1d5db;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .feature-grid {
-    grid-template-columns: 1fr;
-  }
-  nav a {
-    margin-left: 12px;
-    font-size: 13px;
-  }
-  .hero h1 {
-    font-size: 28px;
-  }
-}
 /* Plugin list page */
 .hero-list {
   padding: 60px 0;
@@ -363,6 +368,10 @@ nav a {
   }
 
   .plugin-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .screenshot-grid {
     grid-template-columns: 1fr;
   }
 
