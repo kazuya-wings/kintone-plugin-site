@@ -3,92 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>[プラグイン名] - kintoneプラグイン</title>
+  <title>kintoneプラグイン一覧</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <header class="site-header">
     <div class="container header-inner">
-      <div class="logo">[プラグイン名]</div>
+      <div class="logo">[あなたの名前 / 屋号] のkintoneプラグイン</div>
       <nav>
-        <a href="#features">機能</a>
-        <a href="#howto">使い方</a>
-        <a href="#requirements">対応プラン</a>
-        <a href="#download" class="nav-cta">ダウンロード</a>
+        <a href="#plugin-list">プラグイン一覧</a>
+        <a href="mailto:[お問い合わせ用メールアドレス]">お問い合わせ</a>
       </nav>
     </div>
   </header>
 
-  <section class="hero">
+  <section class="hero hero-list">
     <div class="container">
-      <h1>[プラグインの魅力を一言で伝えるキャッチコピー]</h1>
-      <p class="hero-sub">[プラグインが解決する課題や、使うことで得られるメリットを2〜3行で説明します。]</p>
-      <div class="hero-buttons">
-        <a href="#download" class="btn btn-primary">今すぐダウンロード</a>
-        <a href="#howto" class="btn btn-secondary">使い方を見る</a>
+      <h1>kintoneをもっと使いやすくするプラグイン</h1>
+      <p class="hero-sub">業務効率化に役立つkintoneプラグインを公開しています。気になるプラグインをクリックして詳細をご覧ください。</p>
+    </div>
+  </section>
+
+  <section id="plugin-list" class="plugin-list-section">
+    <div class="container">
+      <h2>プラグイン一覧</h2>
+      <div id="plugin-grid" class="plugin-grid">
+        <!-- ここにJavaScriptでカードが自動生成されます -->
       </div>
-    </div>
-  </section>
-
-  <section id="features" class="features">
-    <div class="container">
-      <h2>主な機能</h2>
-      <div class="feature-grid">
-        <div class="feature-card">
-          <div class="feature-icon">🚀</div>
-          <h3>機能タイトル1</h3>
-          <p>この機能でユーザーが得られる具体的なメリットを説明します。</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon">⚙️</div>
-          <h3>機能タイトル2</h3>
-          <p>この機能でユーザーが得られる具体的なメリットを説明します。</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon">📊</div>
-          <h3>機能タイトル3</h3>
-          <p>この機能でユーザーが得られる具体的なメリットを説明します。</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="screenshot">
-    <div class="container">
-      <h2>実際の画面</h2>
-      <div class="screenshot-frame">
-        <img src="https://placehold.co/900x500?text=%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%E3%82%92%E3%81%93%E3%81%93%E3%81%AB" alt="プラグインのスクリーンショット">
-      </div>
-    </div>
-  </section>
-
-  <section id="howto" class="howto">
-    <div class="container">
-      <h2>使い方</h2>
-      <ol class="howto-list">
-        <li><strong>プラグインをダウンロード</strong><br>下のボタンからzipファイルを取得します。</li>
-        <li><strong>kintoneにインストール</strong><br>kintoneシステム管理からプラグイン管理を開き、zipファイルを読み込みます。</li>
-        <li><strong>アプリに設定</strong><br>使いたいアプリでプラグインを有効化し、設定画面から必要な項目を入力します。</li>
-      </ol>
-    </div>
-  </section>
-
-  <section id="requirements" class="requirements">
-    <div class="container">
-      <h2>対応プラン・動作要件</h2>
-      <table>
-        <tr><th>対応プラン</th><td>スタンダードコース / ライトコース</td></tr>
-        <tr><th>価格</th><td>無料 / [価格を記載]</td></tr>
-        <tr><th>ライセンス</th><td>[ライセンス情報を記載]</td></tr>
-      </table>
-    </div>
-  </section>
-
-  <section id="download" class="download-cta">
-    <div class="container">
-      <h2>今すぐ始めましょう</h2>
-      <a href="[zipファイルへのリンクをここに]" class="btn btn-primary btn-large">プラグインをダウンロード</a>
     </div>
   </section>
 
@@ -99,5 +41,7 @@
     </div>
   </footer>
 
+  <script src="plugins-data.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
