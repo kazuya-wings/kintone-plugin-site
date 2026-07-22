@@ -1,9 +1,9 @@
 const plugins = [
   {
     id: "plugin-1",
-    name: "プラグイン名A",
+    name: "編集時自動ルックアッ",
     icon: "🚀",
-    description: "このプラグインが解決する課題やメリットを1〜2行で説明します。",
+    description: "レコードの作成・編集画面を開くだけで、指定したルックアップフィールドを自動で取得します。",
     page: "plugins/plugin-1.html"
   },
   {
