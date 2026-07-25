@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>オートルックアップ - kintoneプラグイン</title>
   <link rel="stylesheet" href="../style.css">
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="109e02f7-43d8-4a75-9b07-237175e63104"></script>
 </head>
 <body>
 
@@ -15,7 +16,10 @@
         <a href="../index.html#plugin-list">一覧に戻る</a>
         <a href="#howto">使い方</a>
         <a href="#requirements">対応プラン</a>
-        <a href="#download" class="nav-cta">ダウンロード</a>
+        <a href="#download" class="nav-cta"
+           data-umami-event="cta-click"
+           data-umami-event-location="header"
+           data-umami-event-plugin="auto-lookup">ダウンロード</a>
       </nav>
     </div>
   </header>
@@ -25,8 +29,13 @@
       <h1>ルックアップボタンの押し忘れ、もう心配いりません</h1>
       <p class="hero-sub">レコードの作成・編集画面を開くだけで、指定したルックアップフィールドを自動で取得します。手動クリックの手間とヒューマンエラーをまとめて解消するプラグインです。</p>
       <div class="hero-buttons">
-        <a href="#download" class="btn btn-primary">今すぐダウンロード</a>
-        <a href="#howto" class="btn btn-secondary">使い方を見る</a>
+        <a href="#download" class="btn btn-primary"
+           data-umami-event="cta-click"
+           data-umami-event-location="hero"
+           data-umami-event-plugin="auto-lookup">今すぐダウンロード</a>
+        <a href="#howto" class="btn btn-secondary"
+           data-umami-event="howto-click"
+           data-umami-event-plugin="auto-lookup">使い方を見る</a>
       </div>
     </div>
   </section>
@@ -100,7 +109,11 @@
   <section id="download" class="download-cta">
     <div class="container">
       <h2>今すぐ始めましょう</h2>
-      <a href="https://github.com/kazuya-wings/kintone-plugin-site/releases/download/v1.0.0/auto-lookup-v1.0.0.zip" class="btn btn-primary btn-large">プラグインをダウンロード</a>
+      <a href="https://github.com/kazuya-wings/kintone-plugin-site/releases/download/v1.0.0/auto-lookup-v1.0.0.zip"
+         class="btn btn-primary btn-large"
+         data-umami-event="download"
+         data-umami-event-plugin="auto-lookup"
+         data-umami-event-version="v1.0.0">プラグインをダウンロード</a>
     </div>
   </section>
 
